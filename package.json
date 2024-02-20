@@ -1,0 +1,22 @@
+{
+  "name": "jakesite",
+  "version": "1.0.0",
+  "description": "<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakesouthward/jakesouthward.github.io.git"
+  },
+  "author": "Jake Southward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakesouthward/jakesouthward.github.io/issues"
+  },
+  "homepage": "https://github.com/jakesouthward/jakesouthward.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
+}
