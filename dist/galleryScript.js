@@ -27,11 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
 "2012-03-25 15.46.19.jpg",
 "2012-05-01 18.19.32.jpg",
 "2012-05-10 18.17.13.jpg",
-"2012-05-21 17.37.08.jpg",
 "2012-06-26 13.10.25.jpg",
 "2012-06-26 19.00.37.jpg",
 "2012-07-15 16.04.41.jpg",
-"2012-07-28 07.22.56 copy.jpg",
 "2012-07-28 07.22.56.jpg",
 "2012-10-06 10.12.55.jpg",
 "2012-10-31 07.44.11.jpg",
@@ -41,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 "2012-12-27 16.51.02.jpg",
 "2012-12-29 15.46.41.jpg",
 "2013-01-01 15.15.26.jpg",
-"2013-02-02 12.04.22.jpg",
 "2013-02-02 12.20.00.jpg",
-"2013-02-04 20.16.02.jpg",
 "2013-02-10 12.20.04.jpg",
 "2013-03-03 15.50.02.jpg",
 "2014-08-30 13.45.04.jpg",
@@ -55,8 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const a = document.createElement('a');
         img.src = 'dist/assets/pics/' + image; 
         a.href = 'dist/assets/pics/' + image; 
+        a.setAttribute('data-fancybox', 'gallery');
         img.class = 'block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110'
-        gallery.appendChild(img);
-        gallery.append(a);
+        a.appendChild(img);
+        gallery.appendChild(a);
     });
 });
